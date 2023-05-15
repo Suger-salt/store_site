@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap");
+
+@keyframes change-color-anim {
+  0%,
+  100% {
+    background-color: #78625d;
+  }
+  50% {
+    background-color: #78745d;
+  }
+}
+
+.toppage {
+  font-family: "Shippori Mincho ", serif;
+}
+
+.headline {
+  /* padding: 0.5rem 0; */
+  border-top: solid 3px #bdb878;
+  border-bottom: solid 3px #bdb878;
+}
+
+.headerAll {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: aqua;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  height: 147px;
+}
+
+.back {
+  background-image: url("../public/images/IMG_1433.jpg");
+  background-color: #282c34;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* position: relative; */
+  background-position: top;
+  height: 20%;
+  width: 100%;
+
+  animation: change-color-anim 3s linear infinite;
+}
+
+.header2 {
+  display: flex;
+}
+
+.headerElements {
+  margin-left: auto;
+  background-color: red;
+  text-align: center;
+  width: 100%;
+}
+
+.contents {
+  margin-top: 147px;
+}
+
+.list {
+  height: 400px;
+}
+
+.section {
+  height: 1000px;
+}
+
+.image {
+  height: 15vw;
+  width: 30vw;
+  object-fit: contain;
+  background-color: black;
+}
+
+/* .headline {
+  background-color: aquamarine;
+} */
+
+.text1 {
+  background: radial-gradient(#f5f1ef, #bb7859) fixed;
+  text-align: center;
+  height: 300px;
+}
+
+.text2 {
+  padding: 1em 2em;
+  background-color: #fff; /*背景色*/
+  box-shadow: 0 0 6px 1px #faccbc, 0 0 6px 1px #faccbc inset; /*ふわりとした影*/
+  border-radius: 30px;
+}
+
+.text3 {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #00bcd4;
+  background: #e4fcff; /*背景色*/
+  border-top: solid 6px #1dc1d6;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+}
+
+/* text4はコメント欄でつかいたい */
+.text4 {
+  border: 2px dashed #ffffff;
+  background-color: #eaf4f4;
+  box-shadow: 0 0 0 6px #eaf4f4;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.text5 {
+  background: radial-gradient(#f2b9a1, #ea6264) fixed;
+}
+
+.my-parts1 {
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+.my-parts:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/*この書き方が可能だと知っておく.*/
+.shadow1 {
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+.shadow1:hover {
+  cursor: pointer;
+  text-shadow: 10px 10px 3px #000;
+}
+
+.sideberall {
+  background-color: darkturquoise;
+  height: auto;
+  width: 30vw;
+}
+
+.cards {
+  /* height: 300px;
+  
+  /* margin: auto; */
+  width: 20%;
+  margin: 2rem;
+  border: thick double #b17457;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* .a {
+  transform: translateZ(1px);
+} */
+
+.cardsall {
+  direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.displayall {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  /* justify-content: center; */
+  /* margin: 0%; */
+}
+
+.example {
+  display: block;
+  width: 150px;
+  background: #c8eac3;
+  color: #000;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.example:active {
+  background: #1a720d;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
